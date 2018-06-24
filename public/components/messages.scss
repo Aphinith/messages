@@ -1,0 +1,128 @@
+ul {
+  list-style-type: none;
+  width: 600px;
+  margin: 0 auto;
+  padding-left: 0;
+  font-family: sans-serif;
+}
+
+li {
+  overflow: auto;
+  margin-bottom: 30px;
+  bottom-border: solid black 1px;
+}
+
+p {
+  margin: 0;
+}
+
+.loading-messages {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.image-container {
+  width: 15%;
+  float: left;
+}
+
+.profile-image {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.message-container {
+  width: 85%;
+  float: right;
+}
+
+.profile-name {
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.profile-initials {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  color: #A9ACAC;
+  background-color: #F2F5F5;
+  text-align: center;
+  line-height: 46px;
+}
+
+.icon-container {
+  border-bottom: solid #A9ACAC 1px;
+  padding-bottom: 20px;
+  margin-top: 15px;
+}
+
+.icon-container a {
+  width: 75px;
+  margin-right: 20px;
+}
+
+.icon-container img {
+  width: 20px;
+}
+
+.call-provider, .sms-provider {
+  display: none;
+}
+
+#book-provider {
+  text-decoration: none;
+  display: inline-block;
+  width: 50px;
+  height: 23px;
+  text-align: center;
+  padding-top: 7px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #346D85;
+  background-color: #F2F5F5;
+  position: relative;
+  top: -8px;
+}
+
+#sms-provider-icon {
+  width: 25px;
+}
+
+#email-provider-icon {
+  width: 33px;
+}
+
+.remove-message-provider {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  ul {
+    width: 100%;
+    min-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .icon-container a {
+    width: 15px;
+  }
+
+  .call-provider, .sms-provider {
+    display: inline-block;
+  }
+
+  a.call-provider {
+    margin-right: 25px;
+  }
+
+  a.sms-provider {
+    margin-right: 35px;
+  }
+}
+
+
+
+
