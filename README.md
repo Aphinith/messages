@@ -5,7 +5,7 @@
 3. `npm install`
 4. `npm start` (wait for bundle to finish)
 5. Navigate to localhost:3000 with your browser
-6. All messages will appear in one `<ul>` list each `<ul>` containing the different messages, pictures, and clickable options
+6. All messages will appear in one `<ul>` element with `<li>` elements containing the different messages, pictures, and clickable options
     1. The list has a maximum of width of 600px and centered on the page
     2. When browser is less than 600px, the width of the list will be at 100%, with a minimum of 300px (NOTE - please see note re responsiveness below)
     3. The bottom row actions are all functional as per requirements on document
