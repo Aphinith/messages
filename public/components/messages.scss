@@ -31,6 +31,16 @@ p {
   border-radius: 50px;
 }
 
+.profile-initials {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  color: #A9ACAC;
+  background-color: #F2F5F5;
+  text-align: center;
+  line-height: 46px;
+}
+
 .message-container {
   width: 85%;
   float: right;
@@ -41,14 +51,10 @@ p {
   margin-right: 7px;
 }
 
-.profile-initials {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
+.message-creation-time {
   color: #A9ACAC;
-  background-color: #F2F5F5;
-  text-align: center;
-  line-height: 46px;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 .icon-container {

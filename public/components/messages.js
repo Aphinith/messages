@@ -86,7 +86,7 @@ class Messages extends Component {
       const name = message.name;
       const email = message.email;
       const text = message.message;
-      const creation_time = message.creation_time;
+      const creation_time = that.formatDatetime(message.creation_time);
       const thumbnail = message.thumbnail;
       const phoneNumber = message.phone;
       const initials = that.getInitials(name);
@@ -119,6 +119,19 @@ class Messages extends Component {
     const nameSplit = name.split(' ');
     const initials = nameSplit[0][0] + nameSplit[1][0];
     return initials;
+  }
+
+  formatDatetime(dateTimeStr) {
+    const dateStr = dateTimeStr.split(' ')[0];
+    const timeStr = dateTimeStr.split(' ').slice(1).join(' ');
+    const dateObj = new Date(dateStr);
+    const dateArr = dateObj.toString().split(' ');
+    const day = dateArr[0].toUpperCase();
+    const month = dateArr[1].toUpperCase();
+    const date = dateArr[2];
+    const year = dateArr[3];
+    const finalDateStr = `${day} ${month} ${date} ${year} \u2022 ${timeStr}`;
+    return finalDateStr;
   }
 
   render() {
